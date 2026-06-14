@@ -1,22 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../widgets/bottom_nav.dart';
-
-class _PlaceholderPage extends StatelessWidget {
-  final String title;
-  const _PlaceholderPage({required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          title,
-          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-        ),
-      ),
-    );
-  }
-}
+import 'admin_menu.dart';
+import 'admin_orders.dart';
+import 'admin_reports.dart';
+import 'admin_profile.dart';
 
 class AdminShell extends StatefulWidget {
   const AdminShell({super.key});
@@ -29,10 +16,10 @@ class _AdminShellState extends State<AdminShell> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    const _PlaceholderPage(title: '📋 Kelola Menu'),
-    const _PlaceholderPage(title: '🛒 Pesanan'),
-    const _PlaceholderPage(title: '📊 Laporan'),
-    const _PlaceholderPage(title: '👤 Profil Admin'),
+    const AdminMenu(),
+    const AdminOrders(),
+    const AdminReports(),
+    const AdminProfile(),
   ];
 
   final List<BottomNavItem> _navItems = const [

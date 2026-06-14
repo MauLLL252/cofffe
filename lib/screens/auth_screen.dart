@@ -243,27 +243,6 @@ class _AuthScreenState extends State<AuthScreen> {
                     ),
 
                     const SizedBox(height: 16),
-
-                    // Info demo
-                    Container(
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: AppColors.accent.withOpacity(0.15),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color: AppColors.accent.withOpacity(0.3),
-                        ),
-                      ),
-                      child: const Text(
-                        '💡 Demo: email berisi "admin" → masuk sebagai Admin\n'
-                            '         email lainnya → masuk sebagai Customer',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: AppColors.primary,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
                   ],
                 ),
               ),

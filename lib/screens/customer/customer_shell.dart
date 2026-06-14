@@ -1,24 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../widgets/bottom_nav.dart';
 import 'customer_home.dart';
-import 'customer_menu.dart';             // ← tambah
-
-class _PlaceholderPage extends StatelessWidget {
-  final String title;
-  const _PlaceholderPage({required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          title,
-          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-        ),
-      ),
-    );
-  }
-}
+import 'customer_menu.dart';
+import 'customer_history.dart';       // ← tambah
+import 'customer_profile.dart';       // ← tambah
 
 class CustomerShell extends StatefulWidget {
   const CustomerShell({super.key});
@@ -32,9 +17,9 @@ class _CustomerShellState extends State<CustomerShell> {
 
   final List<Widget> _pages = [
     const CustomerHome(),
-    const CustomerMenu(),                // ← ganti ini
-    const _PlaceholderPage(title: '📋 Riwayat'),
-    const _PlaceholderPage(title: '👤 Profil'),
+    const CustomerMenu(),
+    const CustomerHistory(),           // ← ganti
+    const CustomerProfile(),           // ← ganti
   ];
 
   final List<BottomNavItem> _navItems = const [
