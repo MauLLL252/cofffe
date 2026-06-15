@@ -104,7 +104,7 @@ class CustomerProfile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Budi Santoso',
+                  'Maulana Riski',
                   style: TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.bold,
@@ -113,7 +113,7 @@ class CustomerProfile extends StatelessWidget {
                 ),
                 SizedBox(height: 4),
                 Text(
-                  'budi.santoso@email.com',
+                  'maulana.riski@email.com',
                   style: TextStyle(
                       fontSize: 13, color: AppColors.textGrey),
                 ),

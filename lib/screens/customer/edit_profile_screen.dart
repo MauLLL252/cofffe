@@ -9,8 +9,8 @@ class EditProfileScreen extends StatefulWidget {
 }
 
 class _EditProfileScreenState extends State<EditProfileScreen> {
-  final _nameCtrl  = TextEditingController(text: 'Budi Santoso');
-  final _emailCtrl = TextEditingController(text: 'budi.santoso@email.com');
+  final _nameCtrl  = TextEditingController(text: 'Maulana Riski');
+  final _emailCtrl = TextEditingController(text: 'maulana.riski@email.com');
   final _phoneCtrl = TextEditingController(text: '+62 812 3456 7890');
   final _bdayCtrl  = TextEditingController(text: '15 Agustus 1995');
 
@@ -32,7 +32,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
     setState(() => _isSaving = false);
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: const Text('✅ Profil berhasil diperbarui'),
+        content: const Text('Profil berhasil diperbarui'),
         backgroundColor: AppColors.success,
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(
